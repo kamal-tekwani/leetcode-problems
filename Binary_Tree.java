@@ -3,13 +3,13 @@ package com.home.leetcode.easy;
 public class Binary_Tree
 {
 	TreeNode root;
-	
+
 	static class TreeNode
 	{
 		int val;
 		TreeNode left;
 		TreeNode right;
-		
+
 		public TreeNode(int val)
 		{
 			this.val = val;

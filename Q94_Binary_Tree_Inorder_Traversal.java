@@ -17,21 +17,21 @@ public class Q94_Binary_Tree_Inorder_Traversal
 	 * Time Complexity : 
 	 * Space Complexity : 
 	 */
-	
+
 	/*
 	 *  Recursive Approach
 	 */
-	
+
 	/*
 	public List<Integer> inorderTraversal(TreeNode root)
 	{
         if(root == null)
         	return null;
-        
+
         Stack<TreeNode> stack = new Stack<TreeNode>();
         List<Integer> list = new ArrayList<Integer>();
         TreeNode current = root;
-        
+
         while(current != null || !stack.isEmpty())
         {
         	while(current != null)
@@ -39,28 +39,28 @@ public class Q94_Binary_Tree_Inorder_Traversal
         		stack.add(current);
         		current = current.left;
         	}
-        	
+
         	current = stack.pop();
         	list.add(current.val);
         	current = current.right;
         }
-        
+
         return list;	
     }
-    */
-	
+	 */
+
 	/*
 	 *  Iterative Approach
 	 * 
 	 */
-	
+
 	public List<Integer> inorderTraversal(TreeNode root)
 	{
 		List<Integer> list = new ArrayList<Integer>();
 		inOrder(root, list);
 		return list;
 	}
-	
+
 	public void inOrder(TreeNode root,List<Integer> list)
 	{
 		if(root != null)
