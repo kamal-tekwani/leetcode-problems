@@ -2,7 +2,7 @@ package com.home.leetcode.easy;
 
 /*
  * Problem Link : https://leetcode.com/problems/shuffle-the-array/
- * Solution Link : 
+ * Solution Link : https://leetcode.com/problems/shuffle-the-array/discuss/1314638/JAVA-C%2B%2B-%3A-Simple-or-O(1)-Space-In-Place-or-100-Faster-or-Efficient-or-Explained
  */
 
 
