@@ -17,7 +17,7 @@ public class Q1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number
 	{
 		int length = nums.length;
 		int result[] = new int[length];
-		
+
 		for(int i=0 ; i<length  ; i++)
 		{
 			int count = 0;
@@ -28,8 +28,8 @@ public class Q1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number
 		}
 		return result;
 	}
-	*/
-	
+	 */
+
 	/*
 	 * Time Complexity : O(N)
 	 * Space Complexity : O(N) 
@@ -39,13 +39,13 @@ public class Q1365_How_Many_Numbers_Are_Smaller_Than_the_Current_Number
 		int length = nums.length;
 		int count[] = new int[101];
 		int result[] = new int[length];
-		
+
 		for(int i=0 ; i<length ; i++)
 			count[nums[i]]++;
-		
+
 		for(int i=1 ; i<101 ; i++)
 			count[i] += count[i-1];
-		
+
 		for(int i=0 ; i<length ; i++)
 			if(nums[i] == 0)
 				result[i]=0;
