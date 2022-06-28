@@ -14,7 +14,7 @@ public class Q785_Is_Graph_Bipartite
 	 * Time Complexity :
 	 * Space Complexity : 
 	 */
-	
+
 	public boolean isBipartite(int[][] graph) 
 	{
 		int length = graph.length;
