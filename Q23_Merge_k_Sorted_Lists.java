@@ -11,19 +11,19 @@ public class Q23_Merge_k_Sorted_Lists
 	 * Time Complexity : O(k * N)
 	 * Space Complexity : O(1)
 	 */
-	
+
 	class ListNode
 	{
 		int val;
 		ListNode next;
-		
+
 		public ListNode(int  val)
 		{
 			this.val = val;
 			this.next = null;
 		}
 	}
-	
+
 	public ListNode mergeKLists(ListNode[] lists) 
 	{
 		int i=0;
@@ -39,12 +39,12 @@ public class Q23_Merge_k_Sorted_Lists
 		}
 		return lists[0];
 	}
-	
+
 	public ListNode merge(ListNode list1,ListNode list2)
 	{
 		ListNode head = new ListNode(0);
 		ListNode dummy = head;
-		
+
 		while(list1 != null && list2 != null)
 		{
 			if(list1.val < list2.val)
@@ -59,13 +59,13 @@ public class Q23_Merge_k_Sorted_Lists
 			}
 			head = head.next;
 		}
-		
+
 		if(list1 != null)
 			head.next = list1;
-		
+
 		if(list2 != null)
 			head.next = list2;
-		
+
 		return dummy.next;
 	}
 
