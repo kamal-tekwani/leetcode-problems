@@ -13,7 +13,7 @@ public class Q1_Two_Sum
 	 * Time Complexity : O(N)
 	 * Space Complexity : O(N)
 	 */
-	
+
 	public int[] twoSum(int[] nums, int target)
 	{
 		HashMap<Integer, Integer> hmpMap = new HashMap<Integer, Integer>();
