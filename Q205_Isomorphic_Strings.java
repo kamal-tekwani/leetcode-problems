@@ -21,10 +21,10 @@ public class Q205_Isomorphic_Strings
 
 		for(int i=0 ; i<length ; i++)
 		{
-			if(m1[s.charAt(i)] != m2[s.charAt(i)])
+			if(m1[s.charAt(i)] != m2[t.charAt(i)])
 				return false;
 			m1[s.charAt(i)] = i+1;
-			m2[s.charAt(i)] = i+1;
+			m2[t.charAt(i)] = i+1;
 		}
 		return true;
 	}
