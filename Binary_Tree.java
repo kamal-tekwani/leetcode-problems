@@ -1,6 +1,6 @@
-package com.home.leetcode.easy;
+package com.home.leetcode.medium;
 
-public class Binary_Tree
+public class Binary_Tree 
 {
 	TreeNode root;
 
